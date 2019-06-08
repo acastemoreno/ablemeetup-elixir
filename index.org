@@ -89,13 +89,16 @@ Actor Model (1973)
 [[file:images/modelo-actor.png]]
 #+END_CENTER
 
-** Pero es dificil de aprender
+** Pero es dificil de aprender.
 #+BEGIN_CENTER
-#+ATTR_HTML: :width 550
+#+ATTR_HTML: :width 500
 [[file:images/haskell.png]]
 #+END_CENTER
 
-
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+ Nota [fn:1].
+#+END_QUOTE
 
 * Thank You ˊ・ω・ˋ
 :PROPERTIES:
@@ -106,4 +109,4 @@ Actor Model (1973)
 
 * Footnotes
 
-[fn:1] Footnote is in here!
+[fn:1] http://www.editgym.com/comics/00001.html
