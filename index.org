@@ -1,0 +1,109 @@
+#+TITLE: Elixir Language
+#+SUBTITLE: Lenguaje |> Divertido |> Productivo |> Mantenible |> Confiable
+#+DATE: 2019/06/11（日）19:00
+#+AUTHOR: Albert Castellano Moreno
+#+EMAIL: acastemoreno@gmail.com
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil stat:t
+#+OPTIONS: tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+CREATOR: Emacs 24.4.1 (Org mode 8.2.10)
+#+DESCRIPTION:
+#+EXCLUDE_TAGS: noexport
+#+KEYWORDS:
+#+LANGUAGE: es
+#+SELECT_TAGS: export
+
+
+#+TWITTER: acastemoreno
+
+#+FAVICON: images/elixir.png
+#+ICON: images/elixir.png
+#+HASHTAG: #myelixirstatus
+
+* Nuevo lenguaje? Para qué?
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+    Estoy comodo con el lenguaje que conozco
+
+** [[https://www.youtube.com/watch?v=8pTEmbeENF4][The future of Programming]] (2013)
+  :PROPERTIES:
+  :FILL:     images/future-of-programming.png
+  :TITLE:    white
+  :SLIDE:    white
+  :END:
+
+** 4 ideas en experimentación
+  :PROPERTIES:
+  :FILL:     images/topicos.png
+  :TITLE:    white
+  :SLIDE:    white
+  :END:
+
+** Secuencial -> Concurrente
+- Serie de instrucciones (Computadora, haz esto, luego esto, luego esto, .........)
+- Esto debido al Hardware (Maquina de Von Neumann)
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 450px
+[[file:images/neumann.png]]
+#+END_CENTER
+
+** Pero ahora existian: Array de Procesadores
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 550px
+[[file:images/array-procesadores.png]]
+#+END_CENTER
+
+** Primera solución
+  :PROPERTIES:
+  :ARTICLE: smaller
+  :END:
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/threads-memory.png]]
+#+END_CENTER
+** Pero es un lio
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/multithreaded_programming.jpg]]
+#+END_CENTER
+
+** [[https://youtu.be/xoNRtWl4fZU][Processing 2.7 million images with Elixir (vs Ruby) by David Padilla ]]
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/ruby_results.png]]
+#+END_CENTER
+
+
+** Mejor solución: Programacion Funcional
+:PROPERTIES:
+:ARTICLE: smaller
+:END:
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 420px
+Actor Model (1973)
+
+[[file:images/modelo-actor.png]]
+#+END_CENTER
+
+** Pero es dificil de aprender
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 550
+[[file:images/haskell.png]]
+#+END_CENTER
+
+
+
+* Thank You ˊ・ω・ˋ
+:PROPERTIES:
+:SLIDE: thank-you-slide segue
+:ASIDE: right
+:ARTICLE: flexbox vleft auto-fadein
+:END:
+
+* Footnotes
+
+[fn:1] Footnote is in here!
