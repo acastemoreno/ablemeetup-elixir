@@ -177,43 +177,17 @@ Nota1[fn:1]
 [[file:images/logos.jpg]]
 #+END_CENTER
 
-** Ruby -> Elixir =productividad y diversión del desarrollador=
+** Ruby -> Elixir
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 550px
 [[file:images/Bob_Ross.jpg]]
 #+END_CENTER
 #+ATTR_HTML: :class note
 #+BEGIN_QUOTE
-Nota4[fn:4]
+1.[fn:1]
 #+END_QUOTE
 
-** Erlang -> Elixir =ecosistema, performance, fault tolerance, hot code upgrade=
-#+BEGIN_CENTER
-#+ATTR_HTML: :width 700px
-[[file:images/erlang_elixir.png]]
-#+END_CENTER
 
-** Clojure -> Elixir =Metaprogramación, DSL(Domain Specific Language)=
-#+BEGIN_CENTER
-#+ATTR_HTML: :width 350px
-[[file:images/metaprogramming.png]]
-#+END_CENTER
-
-** En armonia
-  :PROPERTIES:
-  :ARTICLE: larger
-  :END:
-#+BEGIN_QUOTE
-Elixir is what would happen if Erlang, Clojure, and Ruby somehow had a baby and it wasn’t an accident.
-
-  --Devin Torres
-#+END_QUOTE
-
-#+BEGIN_QUOTE
-Elixir offers developers the functional power and concurrent resilience of Erlang, with friendlier syntax, libraries and metaprogramming.
-
-  --Simon St. Laurent
-#+END_QUOTE
 
 * Thank You ˊ・ω・ˋ
 :PROPERTIES:
@@ -226,4 +200,3 @@ Elixir offers developers the functional power and concurrent resilience of Erlan
 [fn:1] [[https://youtu.be/xrIjfIjssLE][Erlang The Movie - 1986]]
 [fn:2] [[http://www.editgym.com/comics/00001.html][Otros lenguajes]]
 [fn:3] [[https://www.youtube.com/watch?v=YU2i3L-euB0][Por qué deberías aprender programación funcional ya mismo]]
-[fn:4] Bob Ross, pintor de "árboles felices" y del "placer de pintar"
