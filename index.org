@@ -102,7 +102,7 @@ Actor Model (1973)
 - La memoria no es compartida.
 - Inmutabilidad (no side efects).
 
-** y funciona, Erlang by Ericsson (1980)
+** y funciona, Erlang by Ericsson (1986)
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 280px
 [[file:images/erlang_the_movie.jpg]]
@@ -135,13 +135,17 @@ Nota1[fn:1]
  Nota2[fn:2].
 #+END_QUOTE
 
-** [[https://www.youtube.com/watch?v=YU2i3L-euB0][Pero es necesario]]
+** Pero es necesario
   :PROPERTIES:
   :FILL:     images/time.png
   :TITLE:    white
   :SLIDE:    white
   :END:
 
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+ Nota3[fn:3].
+#+END_QUOTE
 
 * Thank You ˊ・ω・ˋ
 :PROPERTIES:
@@ -152,4 +156,5 @@ Nota1[fn:1]
 
 * Footnotes
 [fn:1] [[https://youtu.be/xrIjfIjssLE][Erlang The Movie - 1986]]
-[fn:2] http://www.editgym.com/comics/00001.html
+[fn:2] [[http://www.editgym.com/comics/00001.html][Otros lenguajes]]
+[fn:3] [[https://www.youtube.com/watch?v=YU2i3L-euB0][Por qué deberías aprender programación funcional ya mismo]]
