@@ -29,14 +29,20 @@
   :END:
     Estoy comodo con el lenguaje que conozco
 
-** [[https://www.youtube.com/watch?v=8pTEmbeENF4][The future of Programming]] (2013)
+* Problema
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 340px
+[[file:images/cpu0.jpg]]
+#+END_CENTER
+
+** [[https://www.youtube.com/watch?v=8pTEmbeENF4][Descripción detallada del problema]] (2013)
   :PROPERTIES:
   :FILL:     images/future-of-programming.png
   :TITLE:    white
   :SLIDE:    white
   :END:
 
-** 4 ideas en experimentación
+** Resumen del video: 4 ideas en experimentación
   :PROPERTIES:
   :FILL:     images/topicos.png
   :TITLE:    white
@@ -78,7 +84,7 @@
 #+END_CENTER
 
 
-** Mejor solución: Programacion Funcional
+** Mejor solución: Modelo Actor
 :PROPERTIES:
 :ARTICLE: smaller
 :END:
@@ -89,7 +95,36 @@ Actor Model (1973)
 [[file:images/modelo-actor.png]]
 #+END_CENTER
 
-** Pero es dificil de aprender.
+** Programación Funcional, ideal para Modelo Actor
+- La programación funcional es un paradigma de programación.
+- Las funciones son los componentes basicos (no existen objetos).
+- El codigo es declarativo.
+- La memoria no es compartida.
+- Inmutabilidad (no side efects).
+
+** y funciona, Erlang by Ericsson (1980)
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 280px
+[[file:images/erlang_the_movie.jpg]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota1[fn:1]
+#+END_QUOTE
+
+** Controlar conmutaciones telefonicas: Fault Tolerance
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 800px
+[[file:images/telefonista.jpg]]
+#+END_CENTER
+
+** [[https://www.youtube.com/watch?v=c12cYAUTXXs&t=7s][WhatsApp: 55 Ingenieros - $19 Millones]]
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 750px
+[[file:images/whatsapp.png]]
+#+END_CENTER
+
+** La Programación Funcional es dificil de aprender.
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 500
 [[file:images/haskell.png]]
@@ -97,8 +132,16 @@ Actor Model (1973)
 
 #+ATTR_HTML: :class note
 #+BEGIN_QUOTE
- Nota [fn:1].
+ Nota2[fn:2].
 #+END_QUOTE
+
+** [[https://www.youtube.com/watch?v=YU2i3L-euB0][Pero es necesario]]
+  :PROPERTIES:
+  :FILL:     images/time.png
+  :TITLE:    white
+  :SLIDE:    white
+  :END:
+
 
 * Thank You ˊ・ω・ˋ
 :PROPERTIES:
@@ -108,5 +151,5 @@ Actor Model (1973)
 :END:
 
 * Footnotes
-
-[fn:1] http://www.editgym.com/comics/00001.html
+[fn:1] [[https://youtu.be/xrIjfIjssLE][Erlang The Movie - 1986]]
+[fn:2] http://www.editgym.com/comics/00001.html
