@@ -675,10 +675,7 @@ Nota26[fn:26]
 [fn:16] [[https://tech.nested.com/solving-the-expression-problem-with-elixir-916bb9b5dd74][Solving the Expression Problem with Elixir]]
 [fn:17] [[https://content.nanobox.io/discord-elixir-concurrency-template-high-performance/][Discord's Use of Elixir to Handle Concurrency: A Template for Achieving High Performance]]
 [fn:18] [[https://blog.discordapp.com/tagged/elixir][Discord Blog - Tag Elixir]]
-[fn:19] [[https://www.youtube.com/watch?v=#+ATTR_HTML: :class note
-#+BEGIN_QUOTE
-Nota28[fn:28]
-#+END_QUOTEP89N1YJBjpA][ZenMonitor: Scaling Distributed Monitoring at Discord | Code BEAM SF 19]]
+[fn:19] [[https://www.youtube.com/watch?v=P89N1YJBjpA][ZenMonitor: Scaling Distributed Monitoring at Discord | Code BEAM SF 19]]
 [fn:20] [[https://elixir-fest.jp/][Elixir Fest Japan 2019 - Keynote Speaker]]
 [fn:21] [[https://medium.com/@Pinterest_Engineering/introducing-new-open-source-tools-for-the-elixir-community-2f7bb0bb7d8c][Introducing new open-source tools for the Elixir community]]
 [fn:22] Book - Adopting Elixir - Pagina 13
