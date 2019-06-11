@@ -155,6 +155,13 @@ Nota1[fn:1]
   :END:
     ¿Qué tiene de especial?
 
+* Creación
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
 ** José Valim (Parte del Core Team de =Ruby On Rails=)
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 400px
@@ -177,7 +184,7 @@ Nota1[fn:1]
 [[file:images/logos.jpg]]
 #+END_CENTER
 
-** Ruby -> Elixir =productividad y diversión del desarrollador=
+** Ruby -> Elixir =filosofia: productividad y diversión=
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 550px
 [[file:images/Bob_Ross.jpg]]
@@ -187,15 +194,15 @@ Nota1[fn:1]
 Nota4[fn:4]
 #+END_QUOTE
 
-** Erlang -> Elixir =ecosistema, performance, fault tolerance, hot code upgrade=
+** Erlang -> Elixir =ecosistema, performance, fault tolerance, hot upgrade=
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 700px
 [[file:images/erlang_elixir.png]]
 #+END_CENTER
 
-** Clojure -> Elixir =Metaprogramación, DSL(Domain Specific Language)=
+** Clojure -> Elixir =Metaprogramación, DSL(Domain Specific Language), Polymorphism=
 #+BEGIN_CENTER
-#+ATTR_HTML: :width 350px
+#+ATTR_HTML: :width 310px
 [[file:images/metaprogramming.png]]
 #+END_CENTER
 
@@ -215,6 +222,157 @@ Elixir offers developers the functional power and concurrent resilience of Erlan
   --Simon St. Laurent
 #+END_QUOTE
 
+* Features
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+** Pattern Matching
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 300px
+[[file:images/babe_pattern.gif]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota5[fn:5]
+Nota6[fn:6]
+#+END_QUOTE
+
+** Pattern Matching ===
+#+BEGIN_SRC elixir
+iex> {nombre, edad} = {"Albert", 27}
+iex> nombre
+"Albert"
+iex> edad
+27
+iex> {:ok, mensaje} = {:ok, "Holi Woli"}
+{:ok, "Holi Woli"}
+iex> mensaje
+"Holi Woli"
+iex> [a,b,c,d,a] = [1,2,3,4,5]
+!Error
+#+END_SRC
+
+** Pipe Operator =|>=
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 500px
+[[file:images/production_line.png]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota7[fn:7]
+Nota8[fn:8]
+#+END_QUOTE
+
+** Pipe Operator =|>=
+Diseñado inicialmente para resolver este problema:
+#+BEGIN_SRC elixir
+lista = 1..500000
+temp = Enum.map(lista, &(&1*2-20))
+respuesta = Enum.filter(temp, &(rem(&1, 3) == 0 || rem(&1, 5) == 0))
+respuesta = Enum.take(temp, 5)
+
+Enum.take(Enum.filter(Enum.map(1..500000, &(&1*2-20)), &(rem(&1, 3) == 0 || rem(&1, 5) == 0)), 5)
+#+END_SRC
+
+** Pipe Operator =|>=
+Podemos usar algo más elegante y eficiente
+#+BEGIN_SRC elixir
+1..500000
+  |> Enum.map(&(&1*2-20))
+  |> Enum.filter(&(rem(&1, 3) == 0 || rem(&1, 5) == 0))
+  |> Enum.take(5)
+#+END_SRC
+#+ATTR_HTML: :class note
+
+** Pipe Operator =|>=
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 295px
+[[file:images/chain_function.png]]
+#+END_CENTER
+
+** Pipe Operator =|>= Lazy Operator
+Trabaja solo cuando puede
+#+BEGIN_SRC elixir
+iex> procedimientos = 1..500000
+  |> Stream.map(&(&1*2-20))
+  |> Stream.filter(&(rem(&1, 3) == 0 || rem(&1, 5) == 0))
+#Stream<...>
+iex> procedimientos |> Enum.take(5)
+iex> procedimientos |> Enum.to_list
+#+END_SRC
+#+ATTR_HTML: :class note
+
+** Procesos en Elixir =Isolate 2KB Memory=
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/propiedades_proceso.png]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota9[fn:9]
+#+END_QUOTE
+
+** Supervisión de procesos
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/supervision_tree.png]]
+#+END_CENTER
+
+** Confiabilidad del 99.9999999%
+#+BEGIN_QUOTE
+一Una red telefonica siempre debera operar independientemente del numero simultaneo de llamadas, bugs inesperados, o llevandose actualizaciones de hardware y software.
+
+      -- Saša Jurić, Elixir in Action
+#+END_QUOTE
+El proyecto insignia de Erlang (construido por Ericsson) es el AXD301. Lograron una =confiabilidad del 99.9999999%, equivalente a 1 segundo de inactividad cada 32 años.=
+
+Esa misma confiabilidad se puede alcanzar con Elixir.
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota13[fn:13]
+#+END_QUOTE
+
+* Flujo de datos concurrente y distribuido
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+** GenStage: Productores y Consumidores
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/GenStage.png]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota10[fn:10]
+#+END_QUOTE
+
+** Real World Business Process
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/real_world_process.png]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota11[fn:11]
+#+END_QUOTE
+
+** Flow
+#+BEGIN_CENTER
+#+ATTR_HTML: :width 700px
+[[file:images/Flow.png]]
+#+END_CENTER
+#+ATTR_HTML: :class note
+#+BEGIN_QUOTE
+Nota12[fn:12]
+#+END_QUOTE
+
+
 * Thank You ˊ・ω・ˋ
 :PROPERTIES:
 :SLIDE: thank-you-slide segue
@@ -227,3 +385,12 @@ Elixir offers developers the functional power and concurrent resilience of Erlan
 [fn:2] [[http://www.editgym.com/comics/00001.html][Otros lenguajes]]
 [fn:3] [[https://www.youtube.com/watch?v=YU2i3L-euB0][Por qué deberías aprender programación funcional ya mismo]]
 [fn:4] Bob Ross, pintor de "árboles felices" y del "placer de pintar"
+[fn:5] [[https://www.poetic oding.com/the-beauty-of-pattern-matching-in-elixir/][The beauty of Pattern Matching in elixir]]
+[fn:6] [[https://blog.carbonfive.com/2017/10/19/pattern-matching-in-elixir-five-things-to-remember/][Pattern Matching in Elixir: Five Things To Remember]]
+[fn:7] [[https://elixircasts.io/pipe-operator][Pipe Operator - ElixirCasts]]
+[fn:8] [[https://medium.com/@kkomaz/baby-steps-to-elixir-pipe-operator-a82257bdc28d][Baby Steps to Elixir: Pipe Operator |>]]
+[fn:9] [[https://www.youtube.com/watch?v=iswld-Rpi_g&t=1036s][ElixirConf 2017 - Elixir by the Bellyful - Bryan Hunter]]
+[fn:10] [[https://www.youtube.com/watch?v=XPlXNUXmcgE][GenStage and Flow - José Valim (Lambda Days 2017)]]
+[fn:11] [[https://www.youtube.com/watch?v=ycpNi701aCs][ElixirConf 2018 - Architecting Flow in Elixir From Leveraging Pipes... - René Föhring]]
+[fn:12] [[https://www.youtube.com/watch?v=cgIu6q56xh8][Elixir Flow: Event streaming, Streaming processing, Apache Beam]]
+[fn:13] [[https://vimeo.com/17106893][Mats Cronqvist - The nine nines and how to get there]]
