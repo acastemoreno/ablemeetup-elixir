@@ -601,7 +601,7 @@ Nota19[fn:19]
 ** Nintendo Switch
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 800px
-[[file:images/users/nintendo_switch.png]]
+[[file:images/users/nintendo_switch.jpg]]
 #+END_CENTER
 #+ATTR_HTML: :class note
 #+BEGIN_QUOTE
