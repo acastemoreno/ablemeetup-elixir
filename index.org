@@ -399,7 +399,7 @@ Used properly, metaprogramming lets us create clear, concise programs that treat
 -- Book: Metaprogramming Elixir
 #+END_QUOTE
 
-** Ejemplos
+** Ejemplos de Uso
 #+BEGIN_SRC elixir
 # Book: Metaprogramming Elixir
 div do
@@ -599,16 +599,9 @@ Nota19[fn:19]
 #+END_QUOTE
 
 ** Nintendo Switch
-  :PROPERTIES:
-  :FILL:     images/users/nintendo_switch.jpg
-  :TITLE:    white
-  :SLIDE:    white
-  :END:
-
-** Nintendo Switch
 #+BEGIN_CENTER
 #+ATTR_HTML: :width 800px
-[[file:images/users/discord_genstage.png]]
+[[file:images/users/nintendo_switch.png]]
 #+END_CENTER
 #+ATTR_HTML: :class note
 #+BEGIN_QUOTE
